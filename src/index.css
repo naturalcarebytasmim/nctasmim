@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Kohinoor Bangla';
+  src: url('/fonts/kohinoor_bangla-light_100.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kohinoor Bangla';
+  src: url('/fonts/kohinoor_bangla-regular_200.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kohinoor Bangla';
+  src: url('/fonts/kohinoor_bangla-medium_300.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kohinoor Bangla';
+  src: url('/fonts/kohinoor_bangla-semibold_350.woff2') format('woff2');
+  font-weight: 350;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kohinoor Bangla';
+  src: url('/fonts/kohinoor_bangla-bold_400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --font-bengali: 'Kohinoor Bangla', sans-serif;
+  --font-english: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Apply Inter to English text by default */
+body {
+  font-family: var(--font-english);
+}
+
+/* Apply Kohinoor Bangla to Bengali text */
+[lang="bn"] {
+  font-family: var(--font-bengali);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a8037;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #236c2e;
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid #2a8037;
+  outline-offset: 2px;
+}
