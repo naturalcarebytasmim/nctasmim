@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Kohinoor Bangla';
-  src: url('/fonts/kohinoor_bangla-light_100.woff2') format('woff2');
+  src: url('/fonts/kohinoor_bangla/kohinoor_bangla-light_100.woff2') format('woff2');
   font-weight: 100;
   font-style: normal;
 }
